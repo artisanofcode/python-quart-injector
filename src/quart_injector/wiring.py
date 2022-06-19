@@ -4,16 +4,16 @@ Wire up :class:`~quart.Quart` application to :class:`~injector.Injector` instanc
 
 
 import collections.abc
+import functools
 import inspect
 import typing
-import functools
 
+import injector
 import quart
 import quart.views
-import injector
 
-import quart_injector.scope
 import quart_injector.module
+import quart_injector.scope
 
 
 def _wrap_view_class(

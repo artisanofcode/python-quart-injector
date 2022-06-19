@@ -3,9 +3,9 @@ Quart :class:`~injector.Module`.
 """
 import logging
 
+import injector
 import quart
 import quart.sessions
-import injector
 
 
 class QuartModule(injector.Module):
