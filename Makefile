@@ -27,7 +27,7 @@ docs: update
 
 #: format all source files
 format:
-	poetry run shed --refactor --py310-plus src/**/*.py tests/*.py
+	poetry run shed --refactor --py310-plus src/**/*.py tests/*.py examples/*.py
 
 #: list avalible make targets
 help:

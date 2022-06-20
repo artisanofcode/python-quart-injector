@@ -3,11 +3,12 @@ view class example
 """
 
 import typing
+
+import injector
 import quart
 import quart.views
-import injector
-import quart_injector
 
+import quart_injector
 
 Greeting = typing.NewType("Greeting", str)
 

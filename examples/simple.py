@@ -3,8 +3,10 @@ simple example
 """
 
 import typing
-import quart
+
 import injector
+import quart
+
 import quart_injector
 
 Greeting = typing.NewType("Greeting", str)
