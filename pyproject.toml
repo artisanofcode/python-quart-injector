@@ -83,6 +83,7 @@ testpaths = "tests"
 filterwarnings = [
     "error",
     "ignore::pytest.PytestRemovedIn8Warning",
+    "ignore::DeprecationWarning:pylint.*"
 ]
 
 [tool.pylint.parameter_documentation]
