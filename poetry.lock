@@ -1390,13 +1390,13 @@ test = ["pytest"]
 
 [[package]]
 name = "sphinxcontrib-spelling"
-version = "7.5.0"
+version = "8.0.0"
 description = "Sphinx spelling extension"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 files = [
-    {file = "sphinxcontrib-spelling-7.5.0.tar.gz", hash = "sha256:d92bdc1d63f361b6e0a171b9d68518101745485317f15861501e387f1b78f6ab"},
-    {file = "sphinxcontrib_spelling-7.5.0-py3-none-any.whl", hash = "sha256:da64b9939eca553ebc6930ae82921c0d4aa7b6a7b5d46726b620b421c14b1f30"},
+    {file = "sphinxcontrib-spelling-8.0.0.tar.gz", hash = "sha256:199d0a16902ad80c387c2966dc9eb10f565b1fb15ccce17210402db7c2443e5c"},
+    {file = "sphinxcontrib_spelling-8.0.0-py3-none-any.whl", hash = "sha256:b27e0a16aef00bcfc888a6490dc3f16651f901dc475446c6882834278c8dc7b3"},
 ]
 
 [package.dependencies]
@@ -1630,4 +1630,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "87ec990aa66911459d133d455b6fdfd44d84c0b0a4da00733adb9e002b48d276"
+content-hash = "308c827b4904130c993cd3ca026354736eeb604db3dc6e80c409866c2b09baf3"
