@@ -125,7 +125,7 @@ async def test_it_should_wrap_class_based_views_with_injector() -> None:
             self.arg = arg
             self.empty = empty
 
-        async def dispatch_request(
+        async def dispatch_request(  # pylint: disable=unused-argument
             self,
             *args: typing.Any,
             **kwargs: typing.Any,
@@ -166,7 +166,7 @@ async def test_it_should_error_when_wrapping_class_based_views_with_args() -> No
             self.arg = arg
             self.empty = empty
 
-        async def dispatch_request(
+        async def dispatch_request(  # pylint: disable=unused-argument
             self,
             *args: typing.Any,
             **kwargs: typing.Any,
@@ -217,7 +217,7 @@ async def test_it_should_wrap_class_based_views_using_decorators() -> None:
             self.arg = arg
             self.empty = empty
 
-        async def dispatch_request(
+        async def dispatch_request(  # pylint: disable=unused-argument
             self,
             *args: typing.Any,
             **kwargs: typing.Any,
