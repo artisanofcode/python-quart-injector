@@ -12,7 +12,7 @@ injector = ">= 0.19.0, < 1.0.0"
 quart =  ">= 0.17.0, < 1.0.0"
 
 [tool.poetry.group.dev.dependencies]
-shed = "^0.9.5"
+shed = ">=0.9.5,<2023.7.0"
 pylint = "^2.13.8"
 mypy = "^0.950"
 pytest = "^7.1.2"
