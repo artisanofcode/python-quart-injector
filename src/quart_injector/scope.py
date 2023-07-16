@@ -1,9 +1,4 @@
-"""
-Request :class:`~injector.Scope`.
-"""
-
 import typing
-
 import injector
 import quart
 import werkzeug.local
@@ -69,8 +64,8 @@ def bind_scope(
     async def teardown_func(_: BaseException | None) -> None:
         container.get(scope_cls).pop()
 
-    app.before_request_funcs[None].insert(0, before_func)
-    app.before_websocket_funcs[None].insert(0, before_func)
+    app.before_request_funcs[None] = [(before_func, None)] + app.before_request_funcs[None]
+    app.before_websocket_funcs[None] = [(before_func, None)] + app.before_websocket_funcs[None]
 
-    app.teardown_request_funcs[None].insert(0, teardown_func)
-    app.teardown_websocket_funcs[None].insert(0, teardown_func)
+    app.teardown_request_funcs[None] = [(teardown_func, None)] + app.teardown_request_funcs[None]
+    app.teardown_websocket_funcs[None] = [(teardown_func, None)] + app.teardown_websocket_funcs[None]
