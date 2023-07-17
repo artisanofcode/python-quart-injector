@@ -26,7 +26,7 @@ pytest-pydocstyle = "^2.3.0"
 pyenchant = "^3.2.2"
 
 [tool.poetry.group.docs.dependencies]
-myst-parser = "^0.17.2"
+myst-parser = ">=0.17.2,<2.1.0"
 sphinx-artisan-theme = ">=0.0.1,<0.1.1"
 autodocsumm = "^0.2.8"
 sphinx-autobuild = "^2021.3.14"
